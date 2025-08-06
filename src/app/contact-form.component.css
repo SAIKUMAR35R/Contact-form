@@ -1,0 +1,109 @@
+body{
+    background-color: #e7f3ec;
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 450px;
+    width: 100%;
+    gap: 1rem;
+    box-shadow: 0px 2px 12px rgba(37, 71, 55, 0.07);
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+
+label{
+    font-size: 0.8rem;
+    font-family: 'Arial', sans-serif;
+    color: #464b4b;
+}
+
+span{
+    color: #ff0000;
+}
+
+.form-row{
+    display: flex;
+    gap: 1rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+input[type = "text"],
+input[type = "email"],
+textarea{
+    border: 1px solid #6a867c;
+    border-radius: 6px; 
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+.radio-group{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.radio-group label{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border: 1px solid #6a867c;
+    border-radius: 6px;
+}
+
+.radio-group input[type="radio"]:checked + label,
+.radio-group label:hover {
+  border-color: #167960;
+  background-color: #e0f0eb;
+}
+
+input[type = "radio"]{
+    border: 1px solid #6a867c;
+}
+
+button[type = "submit"]{
+    background-color: #167960;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+button[type = "submit"]:disabled{
+    background-color: #cbe7dc;
+    cursor: not-allowed;
+}
+
+.form-group.consent{
+    flex-direction: row;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+
