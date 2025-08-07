@@ -1,3 +1,11 @@
+<div *ngIf="showSuccess" class="success-banner">
+  <div class="success-icon">✓</div>
+  <div>
+    <b>Message Sent!</b><br>
+    Thanks for completing the form. We'll be in touch soon!
+  </div>
+</div>
+
 <div class="form-container"> 
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <h2>Contact Us</h2>
